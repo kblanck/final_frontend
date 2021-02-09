@@ -88,7 +88,7 @@ export default {
             axios.put('http://localhost:3000/glasses/' + id, this.updatedGlasses)
             .then(response => {
                 console.log(response)
-                this.getGlasses()
+                this.getGlasses();
             }).catch(error => {
                 console.log(error.message)
             })
